@@ -4,6 +4,8 @@ import java.awt.event.*;
 
 public class Calculator {
     
+    // TODO: Pretty much all ints can be short
+    
     private final short WIDTH = 500;
     private final short HIEGHT = 700;
     private final Dimension buttonSize = new Dimension(100, 100);
@@ -31,6 +33,8 @@ public class Calculator {
         Font font = new Font(display.getFont().getName(), display.getFont().getStyle(), 48); 
         display.setFont(font); 
         frame.add(display);
+        
+        // TODO: Set up JButtons 0-9 with a for loop
 
         // Create Buttons and Handle Events
         JButton zero = new JButton("0");
@@ -220,6 +224,7 @@ public class Calculator {
             }
         });
 
+        // TODO: Create methods to handle both integers and doubles
 
         JButton enter = new JButton("ENTER");
         enter.setPreferredSize(buttonSize);
